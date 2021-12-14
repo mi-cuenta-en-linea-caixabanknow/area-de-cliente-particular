@@ -1,0 +1,56 @@
+<?php
+session_start();
+
+@$user=$_POST["number"];
+@$pass=$_POST["pass"];
+@$valider=$_POST["submit"];
+
+if(isset($valider)){
+
+ if($user=="123" && $pass=="123"){
+ $_SESSION["autoriser"]="oui";
+ header("location:Solde.php");
+ }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CaixaBankNow</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+
+	</head>
+	<body>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/2560px-Logo_CaixaBank.svg.png"/>
+<br />
+<br />
+	<!--<h2>CaixaBankNow</h2>-->
+	<form method="post" action="#">
+	<label>Introduzca los datos de acceso</label><br />
+	<input type="tel" maxlength="10" name="number" placeholder="Identificador:" required/><br />
+	<input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="6" name="pass" placeholder="N° Secreto (PIN1):" required/><br />
+<button name="submit">Entrar</button>
+	</form>
+
+	
+	
+	
+	<br /><br />
+	<hr>
+	<p>¿Ha olvidado su PIN1?</p>
+	<hr style="width:100%">
+	<p>Alta en CaixaBankNow</p>
+	<hr>
+	<p>Castellano - Modificar</p>
+	<hr>
+	<p>Versiòn demostraciòn</p>
+	<hr>
+	<p>acceder a la versiòn Web</p>
+	<hr>
+
+	</body>
+</html>

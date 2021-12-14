@@ -1,0 +1,37 @@
+body {
+margin: 0;
+    padding: 10px;
+	font-family: sans-serif;
+}
+
+h2{
+    
+    color: #4871ab;
+}
+
+
+img{
+    width: 50%;
+}
+
+
+input{
+	width: 95%;
+	padding: 7px;
+	border:1px solid gray;
+	border-radius:1px;
+	margin-top: 10px;
+	outline: none;
+	font-size: 13px;
+}
+
+button{
+	width: 99.5%;
+	padding: 10px;
+	border:none;
+	border-radius:0px;
+	margin-top: 10px;
+	background-color: #4871ab;
+	color:  #fff;
+	
+}
